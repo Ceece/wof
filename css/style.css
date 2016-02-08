@@ -1,0 +1,48 @@
+body {
+	background-image: url(../images/UZKEjzG.png);
+	background-repeat: no-repeat;
+	background-color: #83cb53;
+	background-size: cover;
+	margin-top: 20px;
+}
+
+#slider-thumbs {
+	padding: 5px 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: #fff;
+}
+
+#control {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.progress-bar {
+	-webkit-transition: none !important;
+	transition: none !important;
+}
+.reward {
+	border: 2px solid white;
+}
+.reward.won {
+	border: 2px solid black;
+}
+
+.hide-bullets {
+	list-style:none;
+	margin-left: -40px;
+}
+
+.thumbnail {
+	width: 100%;
+	padding: 0;
+	border: 2px solid #ddd;
+	-webkit-transition: none !important;
+	transition: none !important;
+}
+
+.thumbnail.active {
+	border: 2px solid #f00;
+}

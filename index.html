@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/angular.audio.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+</head>
+<body ng-controller="wof">
+	<div class="container">
+		<div class="col-sm-offset-3 col-sm-6 col-xs-12" id="slider-thumbs">
+			<div class="row">
+				<div class="col-xs-3">
+					<div class="thumbnail" ng-class="{ active: number == 0}"><img ng-src="{{ rewards[0].image }}"></div>
+				</div>
+				<div class="col-xs-3">
+					<div class="thumbnail" ng-class="{ active: number == 1}"><img ng-src="{{ rewards[1].image }}"></div>
+				</div>
+				<div class="col-xs-3">
+					<div class="thumbnail" ng-class="{ active: number == 2}"><img ng-src="{{ rewards[2].image }}"></div>
+				</div>
+				<div class="col-xs-3">
+					<div class="thumbnail" ng-class="{ active: number == 3}"><img ng-src="{{ rewards[3].image }}"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-3">
+					<ul class="hide-bullets">
+						<li>
+							<div class="thumbnail" ng-class="{ active: number == 11}"><img ng-src="{{ rewards[11].image }}"></div>
+						</li>
+
+						<li>
+							<div class="thumbnail" ng-class="{ active: number == 10}"><img ng-src="{{ rewards[10].image }}"></div>
+						</li>
+
+					</ul>
+				</div>
+				<div class="col-xs-6">
+					<div id="control">
+						<p><img src="https://placehold.it/400x100?text=LOGO" style="width: 100%;"></p>
+						<div class="text-center">
+							<button class="btn btn-primary" type="button" ng-click="spin()"  ng-disabled="isSpinning()">Start</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-3">
+					<ul class="hide-bullets">
+						<li>
+							<div class="thumbnail" ng-class="{ active: number == 4}"><img ng-src="{{ rewards[4].image }}"></div>
+						</li>
+
+						<li>
+							<div class="thumbnail" ng-class="{ active: number == 5}"><img ng-src="{{ rewards[5].image }}"></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-3">
+					<div class="thumbnail" ng-class="{ active: number == 9}"><img ng-src="{{ rewards[9].image }}"></div>
+				</div>
+				<div class="col-xs-3">
+					<div class="thumbnail" ng-class="{ active: number == 8}"><img ng-src="{{ rewards[8].image }}"></div>
+				</div>
+				<div class="col-xs-3">
+					<div class="thumbnail" ng-class="{ active: number == 7}"><img ng-src="{{ rewards[7].image }}"></div>
+				</div>
+				<div class="col-xs-3">
+					<div class="thumbnail" ng-class="{ active: number == 6}"><img ng-src="{{ rewards[6].image }}"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
